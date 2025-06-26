@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DBConnectionTest {
-    private static final String URL = "jdbc:mysql://127.0.0.1:3306/hwjava";
+    private static final String URL = "jdbc:mysql://127.0.0.1:3306/your_database_name"; // Change to your MySQL database URL
     private static final String USER = "root"; // Change to your MySQL user
     private static final String PASSWORD = " "; // Change to your MySQL password
 
@@ -15,7 +15,7 @@ public class DBConnectionTest {
         ResultSet rs = null;
 
         try {
-            
+
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
             System.out.println("Connection successfully!");
 
